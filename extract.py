@@ -16,7 +16,7 @@ def load_toml() -> dict :
 toml_data = load_toml()
 
 # Specify number of employees to generate
-num_employees = 100
+num_employees = toml_data['nombre_de_lignes']
 
 # Create Faker instance
 fake = Faker()
